@@ -11,4 +11,7 @@ def home(request):
 		even_or_odd = "even"
 	else:
 		even_or_odd = "odd"
-	return render(request, 'base.html', {"number":num,"num":even_or_odd}) #response
+	random_numbers = []
+	for i in range(random.randint(2, 8)):
+		random_numbers.append(random.randint(0, 1000))
+	return render(request, 'base.html', {"number":num,"num":even_or_odd, "random_numbers":random_numbers}) #response
