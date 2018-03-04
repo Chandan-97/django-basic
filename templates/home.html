@@ -1,0 +1,15 @@
+{% extends "./base.html" %}
+	{% block title %}
+		Random Numbers | {{block.super}}
+	{% endblock title %}
+
+	{% block content %}
+	<h2>number : {{number}}</h2>
+	<p>This is {{num}} number.</p>
+	<hr/> <br/>
+	<p>Some more random numbers are : </p>
+	{% for nums in random_numbers %}
+		{{nums}}
+		<br>
+	{% endfor %}
+	{% endblock content %}
