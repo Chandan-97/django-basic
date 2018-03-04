@@ -1,17 +1,11 @@
 <html>
 <head>
-	<title>Base.html</title>
+	<title>{% block title %}Template Inheritence {% endblock title %}</title>
 </head>
 <body>
-	<h1>number : {{number}}</h1>
-	<p>This is {{num}} number.</p>
-	<hr/> <br/>
-	<p>Some more random numbers are : </p>
-	{% for nums in random_numbers %}
-		{{nums}}
-		<br>
-	{% endfor %}
-	
-
+	<h1>Repeated Content</h1>
+	<div class="container">
+		{% block content %}Base Content{% endblock content%}
+	</div>
 </body>
 </html>

@@ -14,4 +14,13 @@ def home(request):
 	random_numbers = []
 	for i in range(random.randint(2, 8)):
 		random_numbers.append(random.randint(0, 1000))
-	return render(request, 'base.html', {"number":num,"num":even_or_odd, "random_numbers":random_numbers}) #response
+	return render(request, 'home.html', {"number":num,"num":even_or_odd, "random_numbers":random_numbers}) #response
+	#render(request, 'template.html', {"context", context})
+
+
+def home2(request):
+	return render(request, 'home2.html', {}) #response
+
+
+def home3(request):
+	return render(request, 'home3.html', {}) #response
