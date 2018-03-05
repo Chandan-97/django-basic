@@ -1,11 +1,15 @@
 <html>
 <head>
 	<title>{% block title %}Template Inheritence {% endblock title %}</title>
+	{% include "snippets/css.html" %}
 </head>
 <body>
-	<h1>Repeated Content</h1>
+	<div class="container">
+		<h1>Repeated Content</h1>
+	</div>
 	<div class="container">
 		{% block content %}Base Content{% endblock content%}
 	</div>
 </body>
+{% include "snippets/js.html" %}
 </html>

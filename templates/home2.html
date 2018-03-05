@@ -2,7 +2,9 @@
 	{% block title %}
 		Home2 | {{block.super}}
 	{% endblock title %}
-	<h1>Inside home2</h1>
+
 	{% block content %}
-		<p>Inside home2</p>
+		{% include "snippets/nav.html" %}
+		{% include "snippets/sidebar.html" %}
+		<h2>Inside home2</h2>
 	{% endblock %}
