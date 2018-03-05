@@ -3,4 +3,16 @@
 __pycache__/
 *.py[cod]
 *.class
-
+db.sqlite3
+*.pyo
+*.mo
+*~
+.coverage
+uwsgi.ini
+log/**
+!log/placeholder
+media/**
+!media/**/init.txt
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
