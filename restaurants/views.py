@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import random
+from django.views import View
 # Create your views here.
 # function based views
 def home(request):
@@ -24,3 +25,8 @@ def home2(request):
 
 def home3(request):
 	return render(request, 'home3.html', {}) #response
+
+class Home2(View):
+	def get(self, request, *args, **kwargs):
+		print(kwargs)
+		return render(request, "home2.html", {})
