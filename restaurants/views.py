@@ -28,5 +28,4 @@ def home3(request):
 
 class Home2(View):
 	def get(self, request, *args, **kwargs):
-		print(kwargs)
 		return render(request, "home2.html", {})

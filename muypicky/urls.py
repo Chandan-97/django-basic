@@ -20,6 +20,6 @@ from restaurants.views import home, home2, home3, Home2
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home),
-    url(r'^home2/(?P<id>\d+)/$', Home2.as_view()),
+    url(r'^home2$', Home2.as_view()),
     url(r'^home3$', home3),
 ]
